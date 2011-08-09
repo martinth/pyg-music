@@ -50,7 +50,7 @@ class MainDialog(QtGui.QDialog):
 
     
     @pyqtSlot()    
-    def load_finished(self, ok):
+    def load_finished(self, ok=True):
         '''Slot when a page loaded completely.''' 
         url = self.ui.webView.url()
         if url.host() == "music.google.com":
